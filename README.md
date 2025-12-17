@@ -1,0 +1,1 @@
+A blog writing website, made in my freetime for 2025 christmas holiday, and to learn.
