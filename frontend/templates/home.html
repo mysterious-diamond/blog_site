@@ -1,11 +1,17 @@
 <html>
-<head>
-	<title>Blog Site</title>
-</head>
-<body>
-	<h1>Hello, welcome.</h1>
-	<h3><i>A simple blogging website...</i></h3>
-	<a href="login">Login now</a><br>
-	<a href="signup">Signup now</a>
-</body>
+  <head>
+    <title>Blog Site</title>
+  </head>
+  <body>
+    <h1><i>A simple blogging website.</i></h1>
+    <h3>
+      <i>
+        {% if ok %} Welcome, {{ username }} {% else %} Seems like you haven't
+        logged in yet, <a href="login">login?</a>
+        {% endif %}
+      </i>
+    </h3>
+    {% if ok %} <a href="/logout"><i>Log out?</i></a> {% endif %}
+    <a href="signup">Make a new account</a>
+  </body>
 </html>
